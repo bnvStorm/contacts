@@ -318,6 +318,10 @@ body{
         max-width: 100%;
         margin: 0 20px;
 }
+.sites_box a{
+/*    font-weight: bold;*/
+    color:#000;
+}
 .sites_box .item{
     display: flex;
     flex-direction:column;

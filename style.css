@@ -240,6 +240,16 @@ body{
  .sites_box a:hover{
     color: #8c001a;
 }
+.phone__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phone_left{
+    display: flex;
+    align-items:center;
+    margin-right: 5px;
+}
 .sites_box a.phone{
     font-weight: bold;
     font-size: 21px;
@@ -267,13 +277,13 @@ body{
    display: flex;
    flex-direction:column;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: space-around;
    text-align: center;
    background: #fff;
    width: 100%;
    /*   max-width: 320px;*/
    height: 100%;
-   padding: 10px;
+   padding: 15px;
    border: 1px solid #b3acac;
    border-radius: 8px;
    box-sizing: border-box;
@@ -288,7 +298,7 @@ body{
 .item_card .title{
     line-height: 32px;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 23px;
 }
 
 @media(max-width:960px){
@@ -387,10 +397,13 @@ body{
     .text{
      font-size:16px;
  }
+ .sites_box{padding: 0px;}
 }
 
 @media(max-width:320px){
     .center{
         max-width: 270px;
     }
+    .phone-ico{display: none;}
+
 }

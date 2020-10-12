@@ -237,6 +237,9 @@ body{
     /*    font-weight: bold;*/
     color:#006c8c;
 }
+ .sites_box a:hover{
+    color: #8c001a;
+}
 .sites_box a.phone{
     font-weight: bold;
     font-size: 21px;

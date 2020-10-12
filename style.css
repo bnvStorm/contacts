@@ -70,7 +70,8 @@ body{
     background: #fff;
     max-width: 400px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 19px;
+    padding: 3px;
     font-family: 'Century Gothic';
     margin-bottom: 10px;
 }
@@ -104,7 +105,7 @@ body{
     margin-left: 20px;
 }
 .city-title{
-/*    background: none;*/
+    /*    background: none;*/
     font-size: 16px;
     text-align: center;
 }
@@ -201,137 +202,188 @@ body{
     .city-table{
         font-size: 21px;
     }
-    @media(max-width:960px){
-        body{
-            background-size: 1000px;
-        }
-        .main-note .purpule,.main-note a{
-            font-size: 25px;
-        }
-
-        .logo{
-            left: 0;
-            margin-top: 100px;
-            order: -1;
-
-        }
+    .press-cont{
+        display: flex;
+        flex-direction:column;
     }
-    @media(min-width:481px){
-        .left{
-            max-width: 420px;
-
-        }
-        .logo{
-            left: 25%;
-        }
-        .purpule{
-            font-size: 20px;
-        }
-        .item{
-            font-size: 20px;
-        }
-    }
-    @media(max-width:480px){
-        body{
-            background-image: url('bgph.jpg');
-            background-size: 100%;
-        }
-        .main{
-            align-items: center;
-            padding-left: 0px;
-            /* padding-right: 20px; */
-        }
-        .main-note .purpule{
-            font-size: 12px;
-            margin-bottom: 0;
-        }
-        .main-note a{
-            font-size: 12px;
-        }
-        .center .item{
-            margin-top: 20px;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-        .city-table .phone{
-            font-size: 16px;
-        }
-        .city-table{
-            font-size: 16px;
-        }
-
-        .left{
-            margin: 20px;
-            margin-top: 10px;
-        }
-        .logo{
-            left: 0%;
-            order: -1;
-            margin-top: 10px;
-        }
-        .logo img{
-            max-width: 350px;
-            width: 100%;
-        }
-        .center{
-            max-width: 320px;
-        }
-        .center .item{
-            left: 0;
-        }
-        .right{
-            margin-top: 100px;
-            order: -1;
-            justify-content: flex-start;
-        }
-        .phone{
-            font-size:16px;
-        }
-        .mobile{
-            margin-top: 50px;
-            display: block;
-        }
-        .desctop{
-            display: none;
-        }
-        .text{
-           font-size:16px;
-       }
-   }
-   .press-cont{
-    display: flex;
-    flex-direction:column;
-}
-.press-cont .box{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.sites_cont{
-    display: flex;
-    flex-direction:column;
-}
-.sites_box{
-    display: flex;
-    justify-content: space-between;
+    .press-cont .box{
+        display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
-        max-width: 100%;
-        margin: 0 20px;
+    }
+    .sites_cont{
+        display: flex;
+        flex-direction:column;
+    }
+    .sites_box{
+        display: flex;
+        flex-direction: column;
+        /*        justify-content: space-between;*/
+        /*        flex-wrap: wrap;*/
+        /*        max-width: 1020px;*/
+        /*        margin: 0 auto;*/
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+    .sites_box .row{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       width: 100%;
+   }
+   .sites_box a{
+    /*    font-weight: bold;*/
+    color:#006c8c;
 }
-.sites_box a{
-/*    font-weight: bold;*/
-    color:#000;
+.sites_box a.phone{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 31px;
 }
+.sites_box img{
+    max-width: 150px;
+} 
 .sites_box .item{
     display: flex;
     flex-direction:column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+    width: 100%;
+    /*        max-width: 330px;*/
+    box-sizing: border-box;
+    padding: 15px;
+    background: rgb(255 255 255 / 51%);
+        border-radius: 4px;
+    border:1px solid #000;
+    margin:10px;
 }
-.sites_box img{
-    max-width: 100px;
-}   
+.item_card{
+ display: flex;
+ flex-direction:column;
+ align-items: center;
+ justify-content: flex-start;
+ text-align: center;
+ background: #fff;
+ width: 100%;
+ /*   max-width: 320px;*/
+ height: 100%;
+ padding: 10px;
+ border: 1px solid #b3acac;
+ border-radius: 8px;
+ box-sizing: border-box;
+ box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.item_card:hover{
+   box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+.item_card .text{
+    margin-bottom: 10px;
+}
+.item_card .title{
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+@media(max-width:960px){
+    body{
+        background-size: 1000px;
+    }
+    .main-note .purpule,.main-note a{
+        font-size: 25px;
+    }
+
+    .logo{
+        left: 0;
+        margin-top: 100px;
+        order: -1;
+
+    }
+}
+@media(min-width:481px){
+    .left{
+        max-width: 420px;
+
+    }
+    .logo{
+        left: 25%;
+    }
+    .purpule{
+        font-size: 20px;
+    }
+    .item{
+        font-size: 20px;
+    }
+}
+@media(max-width:480px){
+    body{
+        background-image: url('bgph.jpg');
+        background-size: 100%;
+    }
+    .main{
+        align-items: center;
+        padding-left: 0px;
+        /* padding-right: 20px; */
+    }
+    .main-note .purpule{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .main-note a{
+        font-size: 12px;
+    }
+    .center .item{
+        margin-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .city-table .phone{
+        font-size: 16px;
+    }
+    .city-table{
+        font-size: 16px;
+    }
+
+    .left{
+        margin: 20px;
+        margin-top: 10px;
+    }
+    .logo{
+        left: 0%;
+        order: -1;
+        margin-top: 10px;
+    }
+    .logo img{
+        max-width: 350px;
+        width: 100%;
+    }
+    .center{
+        max-width: 320px;
+    }
+    .center .item{
+        left: 0;
+    }
+    .right{
+        margin-top: 100px;
+        order: -1;
+        justify-content: flex-start;
+    }
+    .phone{
+        font-size:16px;
+    }
+    .mobile{
+        margin-top: 50px;
+        display: block;
+    }
+    .desctop{
+        display: none;
+    }
+    .text{
+       font-size:16px;
+   }
+}
+
 @media(max-width:320px){
     .center{
         max-width: 270px;

@@ -309,6 +309,8 @@ border-radius: 10px;
 background-image: url(../img/popup.png);
 background-repeat-y: no-repeat;
 padding-top: 55px;
+text-align: center;
+    font-size: 20px;
 }
 /**
 * Fade-zoom animation for first dialog

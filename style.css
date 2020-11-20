@@ -72,16 +72,16 @@ body{
 .left{
     width: 100%;
     max-width: 425px;
-    margin-top: 240px;
+    margin-top: 40px;
 }
 
 .center{
     width: 100%;
     max-width: 370px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .center .item{
-    margin-top: 250px;
+    margin-top: 150px;
     margin-left: 15px;
     padding-left: 20px;
     padding-right: 20px;

@@ -14,6 +14,7 @@ body{
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
+    justify-content: flex-end;
 }
 .signature{
     display: flex;
@@ -67,7 +68,7 @@ body{
 .item{
     margin-bottom: 15px;
     margin-top: 15px;
-    
+
 }
 .left{
     width: 100%;
@@ -81,12 +82,16 @@ body{
     justify-content: flex-start;
 }
 .center .item{
-    margin-top: 150px;
+    margin-top: 40px;
     margin-left: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     position: relative;
     right: -45px;
+
+}
+.center .item a{
+    background: none;
 }
 .right{
     width: 100%;
@@ -99,7 +104,7 @@ body{
     margin-left: 150px;
 }
 .right .item:nth-child(3){
-    margin-left: 180px;
+    margin-left: 70px;
 }
 .right .item:nth-child(4){
     margin-left: 150px;
@@ -140,12 +145,16 @@ body{
     max-width: 800px;
     width: 100%;
     font-size: 35px;
+        box-sizing: border-box;
 }
 .main-note .purpule{
     font-size: 35px;
 }
 .nota{
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
@@ -160,6 +169,7 @@ body{
     margin: 0 auto;
     margin-right: 0;
     padding-top: 15px;
+    margin-top: 40px;
 }
 
 .idocs_btn-cont{
@@ -169,7 +179,7 @@ body{
     background: url(img/btn.png);
     border-radius: 8px;
     border:1px solid #000;
-    color:#fff; 
+    color:#fff;
     font-weight: bold;
     text-decoration: none;
     margin-left: 2%;
@@ -198,11 +208,53 @@ body{
 .city-table tr td:nth-of-type(2){
     text-align: right;
 }
+.instr{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+        background: url(img/btn.png) !important;
+        padding: 0;
 
+}
+.instr .purpule{
+    background: rgb(0 0 0 / 19%);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+        text-align: center;
+}
+.instr a{
+    color:#fff;
+}
 .note{
     background: #F7D400;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     font-size: 16px;
+}
+.dwnl{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0 !important;
+    max-width: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+}
+.dwnl a{
+    display: block;
+    font-family: 'Roboto';
+    max-width: 280px;
+    background: url(img/btn.png);
+    border-radius: 8px;
+    border:1px solid #000;
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .phone{
     color:#000;
@@ -332,7 +384,7 @@ body{
 }
 .sites_box img{
     max-width: 150px;
-} 
+}
 .sites_box .item{
     display: flex;
     flex-direction:column;
